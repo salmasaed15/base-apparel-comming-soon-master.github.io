@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&family=Kumbh+Sans:wght@400;600&family=Poppins:wght@100&family=Space+Mono&display=swap'); 
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    text-decoration: none;
+}
+
+
+.container{
+    margin-top:100px ;
+    margin-left: 300px;
+    width: 800px;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    box-shadow: -10px 10px 20px rgb(183, 179, 179);  
+    margin-bottom: 20px;
+}
+/* .image-girl{
+    width: 400px;
+    height: 300px;
+} */
+.image-girl img{
+    width: 300px;
+    height: 400px;
+    margin-top: 3px;
+
+}
+.content{
+    font-family: Josefin Sans;
+    background: url('images/bg-pattern-desktop.svg ');
+    width: 500px;
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+    background-repeat:no-repeat;
+}
+.logo{
+    margin:50px 100px 50px 100px; 
+}
+.logo img{
+    width: 90px;
+}
+.content h1{
+    font-weight: bold;
+    padding:0 100px 0 100px;
+    letter-spacing: 8px;
+    word-break: break-word;
+}
+.content h1 span{
+    color:hsl(0, 36%, 70%);
+    font-weight: 200;
+}
+.content p{
+    color:hsl(0, 36%, 70%);
+    font-size: 10px;
+    padding:15px 100px 0 100px
+}
+.content .valid{
+    position: relative;
+}
+.valid input{
+    margin: 15px 100px 0 100px;
+    padding:8px 35px 8px 15px ;
+    border: 1px solid hsl(0, 36%, 70%);
+    border-radius: 15px;
+    width: 250px;
+}
+.valid img{
+    position: absolute;
+    top: 18px;
+    left: 240px;
+    width: 25px;
+    height: 25px;
+    display: none;
+}
+.valid button{
+    position: absolute;
+    color:#fff;
+    width: 70px;
+    height:35px ;
+    border-radius: 20px;
+    left: 280px;
+    bottom:25px;
+    background:  hsl(0, 93%, 68%);
+    font-weight: bold;
+    font-size: 18px;
+    background:linear-gradient( 135deg,  hsl(0, 80%, 86%),  hsl(0, 74%, 74%)) ;
+}
+
+@media (max-width: 375px) {
+    .container{
+        margin: auto;
+        width: 375px;
+        height: 800px;
+        flex-direction: column;
+        background: url('images/bg-pattern-desktop.svg ');
+        background-position: center;
+        background-size: cover;
+        background-repeat:no-repeat;
+        box-shadow: none;
+    }
+    .image-girl img{
+        width: 375px;
+        height: 300px;
+        margin-top: 100px;
+    }
+    .content{
+        font-family: Josefin Sans;
+        width: 375px;
+        height: 400px;
+        position: relative;
+    }
+    .logo{
+        margin:50px 100px 50px 40px; 
+        position: absolute;
+        top:-410px;
+    }
+    .content h1{
+        text-align: center;
+        font-size: 35px;
+        padding:50px 40px 10px 40px;
+        line-height: 1.2;
+    }
+    .content h1 span{
+        text-align: center;
+    }
+    .content p{
+        text-align: center;
+        padding:15px 35px 10px 35px
+    }
+    .valid input{
+        margin: 15px 40px 0 40px;
+    }
+    .valid img{
+        left:215px;
+    }
+    .valid button{
+        width: 60px;
+        border-radius: 25px;
+        left: 254px;
+        top:13px;
+    }
+}
+
+
+/* section{
+    color: hsl(0, 6%, 24%);
+    color:hsl(0, 36%, 70%);
+    color: hsl(0, 93%, 68%);
+} */
+/* 
+- Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%)
+- Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%) */

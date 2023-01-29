@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <link rel="preconnect" 
+  href="https://fonts.googleapis.com">
+  <link rel="preconnect" 
+  href="https://fonts.gstatic.com" 
+  crossorigin>
+  <link 
+  href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&family=Kumbh+Sans:wght@400;600&family=Poppins:wght@100&family=Space+Mono&display=swap" 
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Base Apparel coming soon page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  
+  <div class="container">
+    <div class="image-girl">
+      <img src="images/hero-desktop.jpg" alt="">
+    </div>
+    <div class="content">
+      <div class="logo">
+        <img src="images/logo.svg" alt="">
+      </div>
+      <h1><span>WE'RE </span>COMING SOON</h1>
+      <p>
+        Hello fellow shoppers! We're currently building our new fashion store. 
+        Add your email below to stay up-to-date with announcements and our launch deals.
+      </p>
+      <div class="valid">
+        <form>
+          <input type="email" placeholder="Email Address" id="email" name="email">
+          <label for="email">
+            <img src="images/icon-error.svg" alt="error">
+          </label>
+          <button type='submit' class="submit"> > </button>
+        </form>
+        <p style="visibility: hidden" class="error">Please provide a valid email</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
